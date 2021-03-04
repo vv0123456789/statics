@@ -1,12 +1,13 @@
 <html>
 <body>
+<div id="unsafe">
+</div>
 <script>
   let urlParams = new URLSearchParams(window.location.search);
   let val = urlParams.get('val');
   let htmlVal = decodeURI(val);
   document.getElementById("unsafe").innerHTML = htmlVal;
 </script>
-<div id="unsafe">
-</div>
+
 </body>
 </html>
